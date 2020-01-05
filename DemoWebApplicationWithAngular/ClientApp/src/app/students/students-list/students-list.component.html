@@ -1,0 +1,7 @@
+<div *ngFor="let student of students">
+    <p *ngIf="!isEdit">Name: {{student.firstName}} {{student.lastName}}</p>
+    <button *ngIf="!isEdit" (click)="editMode()">Edit</button>
+    <button *ngIf="!isEdit"> Delete</button>
+    <app-students-edit *ngIf="isEdit" [student]="student" [isEdit]="isEdit"></app-students-edit>
+    <hr/>
+</div>

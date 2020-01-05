@@ -9,7 +9,7 @@ namespace DemoWebApplicationWithAngular.Services
 {
     public class StudentsRepository : IStudentsRepository
     {
-        const string studentsApiUrl = "https://localhost:44315/api/students";
+        const string studentsApiUrl = "https://localhost:44387/api/students";
         public async Task<List<StudentsAc>> GetStudents()
         {
             using (var client = new HttpClient())

@@ -55,9 +55,8 @@ namespace DemoWebApplicationWithAngular
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
             });
 
             app.UseSpa(spa =>
